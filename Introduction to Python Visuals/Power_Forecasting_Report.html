@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Power Forecast Error Report</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #00314a;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2em;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-sizing: border-box;
+      line-height: 1.6;
+      text-align: center; /* <- Key line to center all content */
+    }
+
+    img.logo {
+      display: block;
+      margin: 0 auto 2em auto;
+      width: 300px;
+    }
+
+    h1, h2, h3 {
+      color: #00314a;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5em 0;
+    }
+
+    th, td {
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #eff2f2;
+    }
+
+    th {
+      background-color: #eff2f2;
+      color: #00314a;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .highlight {
+      color: #e34a21;
+      font-weight: bold;
+    }
+
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+      margin-bottom: 2em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <img src="https://raw.githubusercontent.com/stevenstillstraining/plotly/main/images/logo.png" alt="Logo" class="logo">
+
+    <h1>Power Forecast Error Report</h1>
+
+    <p>Hi Geoff,</p>
+
+    <p>
+      I wanted to update you on the performance of our power forecast.
+    </p>
+
+    <p>
+      As you can see, we are still having troubles on <span class="highlight">Saturdays in April</span> and <span class="highlight">mid-week in December</span>. This is probably caused by <strong>Easter</strong> and <strong>Christmas</strong> respectively:
+    </p>
+
+    <iframe src="https://stevenstillstraining.github.io/plotly/mape.html"></iframe>
+
+    <p>
+      Our new policy is still showing a <strong>year-on-year improvement</strong> in forecast accuracy:
+    </p>
+
+    <iframe src="https://stevenstillstraining.github.io/plotly/mape_hh.html"></iframe>
+
+    <p>
+      Here's an explorable chart to inspect individual days:
+    </p>
+
+    <iframe src="https://stevenstillstraining.github.io/plotly/power_vol.html"></iframe>
+
+    <h2>Actions to Continue Improvement</h2>
+
+    <table>
+      <tr>
+        <th>Action</th>
+        <th>Progress</th>
+        <th>Deadline</th>
+      </tr>
+      <tr>
+        <td>Implement weather</td>
+        <td>API connection completed</td>
+        <td>02/07/2025</td>
+      </tr>
+      <tr>
+        <td>Integrate Matrica NN to reporting</td>
+        <td>First forecast complete, integrating this week</td>
+        <td>05/07/2025</td>
+      </tr>
+      <tr>
+        <td>Update reporting suite</td>
+        <td>Data aggregated, BI in progress</td>
+        <td>12/07/2025</td>
+      </tr>
+    </table>
+
+    <p>
+      Let me know if you have any questions.
+    </p>
+    <p>Thanks,<br>Steven</p>
+    <p>This data is anonymised and only used for training purposes</p>
+  </div>
+</body>
+</html>
